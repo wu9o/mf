@@ -29,7 +29,7 @@ const subApps = {
   },
 };
 
-const App = () => {
+const App: React.FC = () => {
   const location = useLocation();
 
   const getSelectedKey = () => {
