@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Overview = () => {
-  return <h1>User Management Overview</h1>;
+	return <h1>User Management Overview</h1>;
 };
 
 export default Overview;
