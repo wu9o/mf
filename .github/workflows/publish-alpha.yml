@@ -33,7 +33,7 @@ jobs:
       - name: Check for changesets
         id: changesets
         run: |
-          if pnpm changeset status --since=origin/develop | grep -q "No unreleased changesets found"; then
+          if pnpm changeset status | grep -q "No unreleased changesets found"; then
             echo "no_changes=true" >> $GITHUB_OUTPUT
           else
             echo "no_changes=false" >> $GITHUB_OUTPUT
